@@ -5,35 +5,47 @@
 Сразу после запуска системе через стандартный интерфейс ввода/вывода (консоль) гарантированно должны даваться исходные данные, с которыми она будет работать. 
 
 Общий вид исходных таков(не ограничен):
+
 balance: 1000, books: [("Алгебра, 10 класс", 5, 100), ("Теория чисел, 2 класс", 42, 500)...]
 
 ## Как работать с программой - 
 Хочу отметить что этот код не стоит запускать на онлайн IDLE!!!
+
 В androidStudio и intellijIdea все прекрасно работает.
 
-У вас есть набор команд - 
-print balance
-show books in stock
+*У вас есть набор команд* - 
+
+_print balance_
+
+_show books in stock_
+
 и тп. по условию задачи.
 
-Но хочется поговорить про buy - 
+*Но хочется поговорить про buy* - 
+
 Обезательно при покупки книги, название должно быть в кавычках-
-buy "name of the book" 0   -->   "deal" or "not deal"
+
+_buy "name of the book" 0_   -->   "deal" or "not deal"
 
 Но если будет так - 
-buy name of the book 0   -->   "I don't understand"
+
+_buy name of the book 0_   -->   "I don't understand"
 
 ### Немного про фишки - 
 Если вы вдруг скупили все книги то - 
-show books in stock  -->  "All books sold out."
+
+_show books in stock_  -->  "All books sold out."
+
 (Если вы скупили один вид книг то он просто уберется из 'show books in stock')
 
 Если вы не чего не купили и решили вызвать - 
-show bought books  -->  "There are no books here."
+
+_show bought books_  -->  "There are no books here."
 
 
 #### Возможные ошибки
 Ошибок не может быть, код адаптивен к любому вводу данных.
+
 Обезательно входные данные!!!
 
 
